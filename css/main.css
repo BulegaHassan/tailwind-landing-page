@@ -547,12 +547,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 6rem;
 }
 
-.-mt-14 {
-  margin-top: -3.5rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.-mt-14 {
+  margin-top: -3.5rem;
 }
 
 .block {
@@ -832,7 +832,7 @@ body {
 
 #cta {
   background-image: url('../img/bg-simplify-section-desktop.svg');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 @media (max-width: 576px) {
