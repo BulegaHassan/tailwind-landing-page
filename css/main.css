@@ -547,12 +547,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 6rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .-mt-14 {
   margin-top: -3.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .block {
@@ -833,6 +833,32 @@ body {
 #cta {
   background-image: url('../img/bg-simplify-section-desktop.svg');
   background-repeat: repeat;
+}
+
+.testmonial {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testmonial > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.testmonial {
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .testmonial {
+    width: 33.333333%;
+  }
 }
 
 @media (max-width: 576px) {
